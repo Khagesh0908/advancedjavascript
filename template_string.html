@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = "Khagesh";
+        var address = "Pune";
+        var phone = 96995132290;
+
+        //normal template concatenation//
+        document.write("My name is " + name + " I am form " + address + " Contact me on " + phone +  "<br>");
+
+        //document.write(``); - backtick
+        //${name} - variable interpolation
+        // I am form ${address} - template literal interpolation
+        //"${anme}" - string interpolation
+        //Tempate string pr literal
+        document.write(`My name is ${name} I am form ${address} Contact me on ${phone}`);
+
+        //Defination
+        //Template literals are string written backticks(``) that allow us to easily insert variables or expressions using ${}
+    </script> 
+</body>
+</html>

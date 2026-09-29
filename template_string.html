@@ -24,5 +24,20 @@
         //Defination
         //Template literals are string written backticks(``) that allow us to easily insert variables or expressions using ${}
     </script> 
+    <script>
+        var fname = "Khagesh";
+        var lname = "Patil";
+
+        function fullname(fname, lname){
+            return `${fname} ${lname}`;
+        }
+
+        let flname = `Hello $(fullName(fname, lname))`;
+        document.write("<br>");
+        document.write(fullname(fname,lname));
+        document.write("<br>");
+        document.write(flname);
+        console.log(flname);
+    </script>
 </body>
 </html>

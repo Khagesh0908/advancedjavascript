@@ -24,5 +24,42 @@
             add(12, 56, 67, 68);
             add(12, 56, 67, 68, 5, 8, 9);
          </script>
+
+         <script>
+            function sumRest(name,course,address,...args){
+                document.write(`Hello ${name}<br>`);
+
+                let sum = 0;
+                for (let i in args){
+                    sum += args[i];
+                }
+                document.write("Total Marks "+sum + "<br>");
+            }
+            sumRest("Khagesh","A","B", 10, 20, 30);
+            sumRest("Tejas","B","C", 10, 20, 30, 40, 50);
+         </script>
+         
+         <script>
+            function studentsInfo(name,address,...subjects){
+                document.write(`Student name : ${name} <br>`);
+                document.write(`Subjects : ${subjects}`);
+            }
+            studentsInfo("Khagesh", "Pune", "HTML", "CSS", "JS")
+         </script>
+
+         <script>
+            function showSum(name, ...numbers){
+                let total = 0;
+                for(let num of numbers){
+                    total += num;
+                }
+                console.log(`Hello , ${name}`);
+                console.log(`You Entered ${numbers.length} numbers : ${numbers.join(", ")}`);
+                console.log(`Total Sum : ${total}`);
+            }
+            showSum("Khagesh", 10, 20, 30);
+            showSum("Tejas", 10, 20, 30, 40, 50);
+            //Rest operator Allows a function to accept any number of arguments and collect then in to array
+         </script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = [100, 200, 300];
+        console.log(arr1);
+        console.log(...arr1); //spread operator
+    </script>
+
+
+    <script>
+        var arrr1 = [10,20,30];
+        var arrr2 = [40,50,60,70,80];
+        //var arrr3 = arrr1.concat(arrr2);
+        //var arrr3 = [...arrr1, ...arrr2]; //spread operator
+        arrr1.push(35);
+        var arrr3 = [5, ...arrr1, ...arrr2, 90];
+
+        document.write(arrr3);
+    </script>
+
+    <script>
+        var obj1 = {
+            name : "Khagesh",
+            course : "A"
+        }
+        var obj2 = {
+            age :22,
+            phone: 256465162,
+        }
+        var obj3 = {...obj1, ...obj2};
+        console.log(obj3);
+        document.write(obj3);
+        document.write(JSON.stringify(obj3));
+        document.write(`<pre>${JSON.stringify(obj3, null, 1)}</pre>`);
+        //JSON.stringify(value,replacer,space);
+        document.write(`<pre>${JSON.stringify(obj3, ("name", "age"), 4)}</pre>`);
+    </script>
+
+    <script>
+        function sunRest(name,...args){ //rest operator used in declaring
+            document.write(`Hello ${name} :`);
+            let sum = 0;
+            for(let i in args){
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+        }
+        var arr4 = [10,20,30,40,50];
+        sunRest("Khagesh",...arr4); //while function spread operator
+
+        //The Spread operator (...) its allow us to expand or unpack the elements of and array or properties of an object into insivisual values
+    </script>
+</body>
+</html>

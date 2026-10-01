@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class hello{
+            message(){
+                document.write("Hello its Khagesh" + "<br>");
+            }
+            helloworld(){
+                document.write("Welcome to Pune" + "<br>");
+            }
+        }
+        let a = new hello();
+        a.message();
+        a.helloworld();
+
+        let b = new hello();
+        b.message();
+        b.helloworld();
+    </script>
+    <script>
+        class student {
+            display(name,course){
+                console.log(`Name : ${name}`);
+                  console.log(`Course : ${course}`);
+            }
+        }
+        let student1 = new student();
+        student1.display("Khagesh","CS");
+
+        let student2 = new student();
+        student2.display("Ishant","IT");
+    </script>
+</body>
+</html>
